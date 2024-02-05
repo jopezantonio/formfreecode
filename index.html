@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free_Code_Survey_Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="title-form">
+        <h1 id="title">Free Code Camp Survey Form</h1>
+        <p id="description">Cursos de Desarrollo Web a tu Alcance</p>
+    </section>
+
+    <form action="" id="survey-form">
+
+        <label id="name-label" for="name">Name</label><input placeholder="Enter your Name" type="text" id="name"
+            required>
+
+        <label id="email-label" for="email">Email</label><input placeholder="Enter your Email" type="email" id="email"
+            required>
+
+        <label id="number-label" for="number">Edad</label><input placeholder="Age" type="number" id="number" min="13"
+            max="120" required>
+
+        <label for="">Curso</label><select name="" id="dropdown">
+            <option class="cursos">Html Basico</option>
+            <option class="cursos" value="">Css Basico</option>
+        </select>
+
+        <!-- Grupo de botones de radio 1 -->
+        <label class="select" for="">Forma de Estudio</label>
+
+        <label>
+            <input class="select" id="opcion1" type="radio" name="grupo1" value="opcion1" checked> Presencial
+        </label>
+        <label>
+            <input class="select" id="opcion2" type="radio" name="grupo1" value="opcion2"> On Line
+        </label>
+
+
+        <label class="select" for="">¿Como supiste de nuestros cursos?</label>
+
+        <label for="checkbox1">
+
+            <input class="select" id="checkbox1" checked value="checkbox" type="checkbox"
+                onclick="document.getElementById('checkbox2').checked = !this.checked">Redes Sociales
+        </label>
+
+        <label for="checkbox2">
+
+            <input class="select" id="checkbox2" value="checkbox" type="checkbox"
+                onclick="document.getElementById('checkbox1').checked = !this.checked">Internet
+        </label>
+
+        <span class="textarea-label">Cuentanos tus expectaticvas en el curso (Opcional)</span>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        <input type="submit" id="submit">
+
+
+
+    </form>
+</body>
+
+</html>
