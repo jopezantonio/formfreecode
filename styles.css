@@ -122,7 +122,20 @@ span {
     height: auto;
     align-self: center;
     background-color: rgb(140, 182, 183);
-    color: rgb(12, 36, 103);
+    color:#fff;
     border-radius: 10px;
     margin-bottom: 45px;
+    text-shadow: black;
 }
+
+#submit:hover{
+    background-color: white;
+    color: cadetblue;
+}
+
+
+
+
+
+
+
